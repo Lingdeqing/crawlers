@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "PORT=8002 pm2 start bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "co": "^4.6.0",
+    "debug": "^2.6.3",
+    "ejs": "^2.6.1",
+    "jade": "~1.11.0",
+    "koa": "^2.7.0",
+    "koa-better-router": "^2.1.1",
+    "koa-body": "^4.1.0",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^1.3.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}

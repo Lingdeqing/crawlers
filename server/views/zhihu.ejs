@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1><%=title%></h1>
+  <%if(items && items.length > 0){for(let item of items){ %>
+    <p>
+      <h2><a href="<%=item.link%>"><%=item.title%></a></h2>
+      <p>作者: <a href="<%=item.authorLink%>" target="_blank"><%=item.author%></a> 点赞数: <%=item.star%></p>
+    </p>
+  <%}} else {%>
+    <p>找不到和您的查询相符的内容或信息</p>
+  <%}%>
+</body>
+</html>
